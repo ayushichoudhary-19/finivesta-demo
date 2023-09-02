@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Finance Society</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="bvambient.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #222; /* Dark gray background */
+            color: #ccc; /* Light gray text */
+            margin: 0;
+            padding: 0;
+            font-weight: 500;
+            text-align: justify;
+        }
+        header {
+            background-color: black; /* Slightly darker gray for header */
+            text-align: center;
+            padding: 30px 0 0 0;
+        }
+        .logo-img{
+            width: 7%;
+        }
+        h1 {
+            margin: 0;
+        }
+        .navbar {
+            background-color: black;
+            height: 8vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+        }
+        .navbar-toggle {
+            font-size: 24px;
+            cursor: pointer;
+            color: #ccc;
+            display: none;
+        }
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .nav-link {
+            text-decoration: none;
+            margin: 0 20px;
+            cursor: pointer;
+            position: relative;
+            transition: color 1s;
+            padding-bottom: 0.5em;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -10px; 
+            width: 0;
+            height: 2px; 
+            transition:  width 0.5s ease, left 0.25s ease, right 0.25s ease, background-color 0.5s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+            left: 0;
+            right: 0;
+            background-color: #71b138; 
+        }
+        .container {
+            max-width: 70%;
+            margin: 20px auto;
+            padding: 4%;
+            background-color: black;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 0.5em;
+        }
+        h2 {
+            color: #71b138; 
+        }
+        p {
+            line-height: 1.6;
+        }
+        .team-container {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #151515;  /* Darker gray background for team containers */
+            border-radius: 0.5em;
+        }
+        .team-heading {
+            font-size: 24px; /* Larger font size for team headings */
+            color: #71b138; /* Green text for team headings */
+            margin-bottom: 10px;
+        }
+        .team-content {
+            font-size: 16px; /* Smaller font size for team content */
+            color: #ccc; /* Light gray text for team content */
+        }
+        .event-container {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #151515; /* Darker gray background for event containers */
+            border-radius: 0.5em;
+        }
+        .event-heading {
+            font-size: 24px; /* Larger font size for event headings */
+            color: #71b138; /* Green text for event headings */
+            margin-bottom: 10px;
+        }
+        .event-content {
+            text-align: justify;
+            font-size: 16px; /* Smaller font size for event content */
+            color: #ccc; /* Light gray text for event content */
+        }
+        .carousel-inner img {
+            padding: 20px 0;
+            width: 50%; /* Set the width to 50% for centered image */
+            display: block;
+            margin: 0 auto; /* Center the image horizontally */
+            height: 300px; /* Adjust the height as needed */
+        }
+        /* Social Icons */
+        .social-icons {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-icon {
+            font-size: 30px;
+            margin: 20px 10px;
+            text-align: center  ;
+            color: #ccc;
+            transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+        }
+
+        .social-icon:hover {
+        color: #71b138 !important;
+}
+
+        footer{
+            text-align: center;
+            font-weight: lighter;
+            font-size: small;
+            height: 5vh;
+        }
+
+        /* BVAmbient Style */
+        .bvambient_particle
+        {
+            position: absolute;
+            pointer-events: none;
+            transition: top linear, left linear;
+            z-index: -1;
+        }
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            header{
+                padding: 20px 0 0 0;
+            }
+            .container{
+            max-width: 90%;
+            }
+            .logo-img{
+            width: 20%;
+            }
+            .navbar-toggle {
+                display: block;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background-color: #333;
+                position: absolute;
+                top: 8vh;
+                right: 0;
+                width: 100%;
+                text-align: center;
+                z-index: 1;
+                padding: 20px 0;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .nav-link {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" class="logo-img">
+    </header>
+    <div class="navbar">
+        <div class="navbar-toggle" onclick="toggleNav()">&#9776;</div>
+        <ul class="nav-links" id="navLinks">
+            <li class="nav-link"><a onclick="showContent('about')">About Us</a></li>
+            <li class="nav-link"><a onclick="showContent('teams')">Teams</a></li>
+            <li class="nav-link"><a onclick="showContent('events')">Events</a></li> 
+            <li class="nav-link"><a onclick="showContent('contact')">Contact</a></li>
+        </ul>
+    </div>
+    <!-- animated bg -->
+    <div id="ambient" style="overflow:hidden; position:absolute; width:100%; height:65vh;"></div>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to Finivesta, the Finance and Economics Society of IGDTUW, dedicated to fostering financial literacy and innovation. We are a passionate community of learners and thinkers, on a mission to explore the exciting world of finance and economics.
+
+                Our goal is to provide a platform for students to enhance their knowledge and understanding of financial concepts, strategies, and the dynamic global economy. Through a series of engaging events, workshops, and discussions, we aim to empower our members with the skills and insights needed to make informed financial decisions.
+                
+                Stay tuned for our upcoming events and activities, where you can connect with like-minded peers, learn from experts, and embark on a journey towards financial excellence. Join us in our pursuit of financial literacy and economic awareness, because at Finivesta, we believe that financial knowledge is the key to a brighter future. </p>
+        </section>
+        <section id="events">
+            <h2>Events</h2>
+
+           <!-- Event 1 -->
+<div class="event-container">
+    <h3 class="event-heading">Workshop 1: Investment Strategies for Financial Success</h3>
+    <div id="eventCarousel1" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#eventCarousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#eventCarousel1" data-slide-to="1"></li>
+            <li data-target="#eventCarousel1" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/event1_image1.jpg" alt="Event 1 Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/event1_image2.jpg" alt="Event 1 Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/event1_image3.jpg" alt="Event 1 Image 3">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#eventCarousel1" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#eventCarousel1" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <p class="event-content">Join us for an engaging workshop on investment strategies and financial success. In this session, you will learn how to build a well-diversified investment portfolio, make informed decisions in stock markets, and navigate the world of cryptocurrencies. Our expert speakers will provide insights into risk management, long-term wealth creation, and the latest trends in the financial markets. Whether you're a novice or an experienced investor, this workshop will equip you with the knowledge and tools to achieve your financial goals..</p>
+</div>
+
+<!-- Event 2 -->
+<div class="event-container">
+    <h3 class="event-heading">Workshop 2: Personal Finance Mastery</h3>
+    <div id="eventCarousel2" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#eventCarousel2" data-slide-to="0" class="active"></li>
+            <li data-target="#eventCarousel2" data-slide-to="1"></li>
+            <li data-target="#eventCarousel2" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/event1_image1.jpg" alt="Event 2 Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/event1_image2.jpg" alt="Event 2 Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/event1_image3.jpg" alt="Event 2 Image 3">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#eventCarousel2" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#eventCarousel2" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <p class="event-content">Take control of your financial future with our Personal Finance Mastery workshop. Discover the art of budgeting, saving, and managing your finances effectively. We will cover essential topics such as debt management, creating an emergency fund, and planning for retirement. Our financial experts will share practical tips for maximizing your income and achieving financial independence. Whether you're a student, young professional, or anyone looking to enhance their financial literacy, this workshop will empower you to make smart financial decisions and secure a stable future.</p>
+</div>
+
+        </section>
+        <section id="teams">
+            <h2>Teams</h2>
+            <div class="team-container">
+                <h3 class="team-heading">Content Team</h3>
+                <p class="team-content">Our Content Team is dedicated to producing top-notch educational materials in the field of finance. They craft informative articles, guides, and resources to keep our members well-informed about financial concepts, strategies, and the latest industry trends.</p>
+            </div>
+            <div class="team-container">
+                <h3 class="team-heading">Technical Team</h3>
+                <p class="team-content">The Technical Team plays a vital role in ensuring the seamless operation of our society. They manage and maintain the technical infrastructure, including websites, apps, and tools, to facilitate effective communication and collaboration among our members.</p>
+            </div>
+            <div class="team-container">
+                <h3 class="team-heading">PR Team</h3>
+                <p class="team-content">Our PR Team excels in managing public relations and communications to promote our society's mission and events. They work tirelessly to create a positive image, engage with the community, and attract new members and partners.</p>
+            </div>
+            <div class="team-container">
+                <h3 class="team-heading">Creative Team</h3>
+                <p class="team-content">The Creative Team is responsible for maintaining our vibrant online presence. They manage our social media platforms, create visually appealing content, and engage with our audience to foster a lively online community.</p>
+            </div>
+            <div class="team-container">
+                <h3 class="team-heading">Sponsorship Team</h3>
+                <p class="team-content">Our Sponsorship Team conducts in-depth research on financial topics and trends to identify potential partners and sponsors. They play a crucial role in securing financial support and collaborations that enable us to host successful events and initiatives.</p>
+            </div>
+            <div class="team-container">
+                <h3 class="team-heading">HR Team</h3>
+                <p class="team-content">Our HR Team manages the recruitment, retention, and development of our society's members. They ensure that our members have a positive and enriching experience while actively promoting the society's values and goals.</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or inquiries, please feel free to contact us at <a href="mailto:finance@college.edu">finivesta@gmail.com </a>.</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </section>
+        
+    </div>
+    <footer>
+        Made with <span style="color: #ff69b4;">&#10084;&#65039;</span> by Ayushi Choudhary - MCA'25
+    </footer>
+
+    <script>
+        /* Check External Source: bvambient.js */ 
+        document.addEventListener("DOMContentLoaded", function() {
+            var demo1 = new BVAmbient({
+                selector: "#ambient",
+                fps: 60,
+                max_transition_speed: 12000,
+                min_transition_speed: 8000,
+                particle_number: 30,
+                particle_maxwidth: 60,
+                particle_minwidth: 10,
+                particle_radius: 50,
+                particle_opacity: true,
+                particle_colision_change: true,
+                particle_background: "#58c70c",
+                particle_image: {
+                    image: false,
+                    src: ""
+                },
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            particle_number: "15"
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            particle_number: "10"
+                        }
+                    }
+                ]
+            });
+        });
+
+        // Function to show/hide sections
+        function showContent(sectionId) {
+            const sections = document.querySelectorAll('.container section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            const selectedSection = document.getElementById(sectionId);
+            selectedSection.style.display = 'block';
+        }
+
+        // Toggle navigation menu for smaller screens
+        function toggleNav() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Close navigation menu when a link is clicked
+        const navLinks = document.querySelectorAll('.nav-link a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                const navLinks = document.getElementById('navLinks');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Initial setup to show only the "About Us" section on page load
+        window.onload = function () {
+            showContent('about');
+        };
+    </script>
+</body>
+</html>

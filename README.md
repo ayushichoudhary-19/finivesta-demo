@@ -1,8 +1,8 @@
  # Finance Society IGDTUW - Finivesta (Demo Website)
-
-
----
-
+<p align="center">
+    <img alt="Finivesta Demo Website" src="![image](https://github.com/ayushichoudhary-19/finivesta-demo/assets/73214455/77dbdd5d-d8b6-47ee-93b7-68914cba6ef5)
+" />
+</p> 
 ## Table of Contents
 
 - [About](#about)
@@ -19,33 +19,27 @@ Welcome to the Finance Society - Finivesta's demo website repository. This proje
 
 ## Demo
 
-Explore the live demo of the Finivesta demo website by clicking [here](https://your-demo-website-url.com).
+Explore the live demo of the Finivesta demo website by clicking [here]([https://your-github-username.github.io/your-repository-name/)](https://ayushichoudhary-19.github.io/finivesta-demo/).
 
 ## Tech Stack
 
-The Finivesta demo website is powered by a variety of technologies and libraries:
+The Finivesta demo website is powered by the following key technologies and libraries:
 
 - **HTML:** The website structure is built using HTML (Hypertext Markup Language), providing the foundation for content and layout.
 
 - **CSS:** CSS (Cascading Style Sheets) is used for styling the website, including fonts, colors, and layout.
 
-- **JavaScript:** JavaScript is employed to add interactivity to the website, such as showing and hiding sections, toggling navigation menus, and managing event carousels.
+- **JavaScript:** JavaScript is employed to add interactivity to the website, specifically for managing the image slider and other dynamic elements.
 
-- **Bootstrap:** The website utilizes the Bootstrap framework for responsive design and pre-designed UI components, making it compatible with various screen sizes.
-
-- **jQuery:** jQuery, a JavaScript library, is included for simplifying DOM manipulation and enhancing user experience.
+- **Bootstrap:** Bootstrap is utilized exclusively for creating the image slider component, enhancing the visual presentation of events.
 
 - **Font Awesome:** Font Awesome is used to incorporate icons, enhancing the visual appeal and functionality of the website.
 
 - **Google Fonts:** Google Fonts provides the "Roboto" font for text elements, improving readability and aesthetics.
 
 - **External JavaScript Libraries:**
-  - `bvambient.js`: This custom JavaScript library is responsible for creating the animated background effect seen on the website.
+  - `bvambient.js`: This custom JavaScript library is responsible for creating the captivating animated background effect seen on the website.
 
-- **External CSS File:**
-  - `finivesta.css`: This custom CSS file contains additional styles specific to the Finivesta website.
-
-- **Images:** Various images are used throughout the website, such as the society logo and event images.
 
 ## Usage
 
@@ -58,5 +52,5 @@ The code for this demo website is provided under the MIT License. You are free t
 ---
 
 <p align="center">
-    Made with ❤️ by [Your Name] - [Your Graduation Year]
+    Made with ❤️ by Ayushi Choudhary
 </p>

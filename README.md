@@ -20,7 +20,7 @@ Welcome to the Finance Society - Finivesta's demo website repository. This proje
 
 ## Demo
 
-Explore the live demo of the Finivesta demo website by clicking [here]([https://your-github-username.github.io/your-repository-name/)](https://ayushichoudhary-19.github.io/finivesta-demo/).
+Explore the live demo of the Finivesta demo website by clicking [here](https://ayushichoudhary-19.github.io/finivesta-demo/).
 
 ## Tech Stack
 

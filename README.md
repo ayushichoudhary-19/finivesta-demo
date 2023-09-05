@@ -1,11 +1,9 @@
-<p align="center">
-    <img alt="Finance Society - Finivesta" src="INSERT_YOUR_LOGO_IMAGE_URL" /> 
-    <br/>
-    <b>Finance Society - Finivesta (Demo Website)</b>
-</p>
+ # Finance Society IGDTUW - Finivesta (Demo Website)
+
 
 <p align="center">
-    <img alt="Finivesta Demo Website" src="screenshot.png" />
+    <img alt="Finivesta Demo Website" src="![image](https://github.com/ayushichoudhary-19/finivesta-demo/assets/73214455/129c9bbe-32c4-4397-b5f6-edb4658b7ee1)
+" />
 </p>
 
 ---
@@ -16,11 +14,13 @@
 - [Demo](#demo)
 - [Tech Stack](#tech-stack)
 - [Usage](#usage)
-- [License](#license)
+- [MIT License](#mit-license)
 
 ## About
 
 Welcome to the Finance Society - Finivesta's demo website repository. This project serves as a demonstration of a simple society website's structure and functionality, created for the recruitment task of the Finance Society, "Finivesta." Please note that this is not the official website of the society but a demo website developed for the recruitment process.
+
+**Disclaimer:** The content used in the website is randomly generated for demonstration purposes and is not 100% authentic.
 
 ## Demo
 
@@ -56,9 +56,9 @@ The Finivesta demo website is powered by a variety of technologies and libraries
 
 This repository serves as a demonstration of a simple society website's structure and functionality, created specifically for the recruitment task of the Finance Society, "Finivesta." You can use this code as a reference or starting point for similar tasks or projects, but please ensure that it is used in compliance with any applicable rules and guidelines set by the society and educational institution.
 
-## License
+## MIT License
 
-The code for this demo website is provided as-is and is not subject to any specific license. You are free to use, modify, or distribute the code for educational or non-commercial purposes. However, please ensure that you respect any copyright and licensing requirements when using external libraries and assets in your own projects.
+The code for this demo website is provided under the MIT License. You are free to use, modify, or distribute the code for educational or non-commercial purposes. However, please ensure that you respect any copyright and licensing requirements when using external libraries and assets in your own projects.
 
 ---
 

@@ -8,6 +8,7 @@
 
 - [About](#about)
 - [Demo](#demo)
+- [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Usage](#usage)
 - [MIT License](#mit-license)
@@ -28,7 +29,7 @@ The Finivesta demo website offers several features to showcase its capabilities:
 
 1. 🌐 **Interactive Design:** The website provides an interactive user experience with smooth navigation and dynamic content.
 
-2. 📱 **Responsive Layout:** Built with Bootstrap, the website adapts to various screen sizes, ensuring a consistent user experience on desktops, tablets, and mobile devices.
+2. 📱 **Responsive Layout:** The website adapts to various screen sizes, ensuring a consistent user experience on desktops, tablets, and mobile devices.
 
 3. 🎪 **Event Carousel:** Engage your audience with event carousels that display multiple images and information about upcoming workshops and events.
 

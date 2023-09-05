@@ -16,7 +16,7 @@
 
 Welcome to the Finance Society - Finivesta's demo website repository. This project serves as a demonstration of a simple society website's structure and functionality, created for the recruitment task of the Finance Society, "Finivesta." Please note that this is not the official website of the society but a demo website developed for the recruitment process.
 
-**Disclaimer:** The content used in the website is randomly generated for demonstration purposes and is not 100% authentic.
+**Disclaimer:** The content used in the website is random and used for demonstration purposes and is not 100% authentic.
 
 ## Demo
 

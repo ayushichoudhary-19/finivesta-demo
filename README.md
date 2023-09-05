@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
  # Finance Society IGDTUW - Finivesta (Demo Website)
 <p align="center">
@@ -23,11 +22,28 @@ Welcome to the Finance Society - Finivesta's demo website repository. This proje
 
 Explore the live demo of the Finivesta demo website by clicking [here](https://ayushichoudhary-19.github.io/finivesta-demo/).
 
+## Features
+
+The Finivesta demo website offers several features to showcase its capabilities:
+
+1. 🌐 **Interactive Design:** The website provides an interactive user experience with smooth navigation and dynamic content.
+
+2. 📱 **Responsive Layout:** Built with Bootstrap, the website adapts to various screen sizes, ensuring a consistent user experience on desktops, tablets, and mobile devices.
+
+3. 🎪 **Event Carousel:** Engage your audience with event carousels that display multiple images and information about upcoming workshops and events.
+
+4. 👥 **Team Showcase:** Introduce your society's teams with dedicated sections, including team names and descriptions.
+
+5. 📧 **Contact Information:** Provide a straightforward way for users to get in touch with your society via the "Contact Us" section.
+
+6. 🎨 **Modern Styling:** Enhance the visual appeal with modern styling, including a dark theme, vibrant green accents, and social media integration.
+
+7. 🌟 **Animated Background:** The website features an eye-catching animated background powered by the custom `bvambient.js` JavaScript library.
+
+8. 🚀 **Demo Deployment:** Access the live demo of the Finivesta demo website on GitHub Pages for a firsthand experience.
+
+
 ## Tech Stack
-<i class="fab fa-html5"></i>
-<i class="fab fa-css3"></i>
-<i class="fab fa-js"></i>
-<i class="fab fa-bootstrap"></i>
 
 The Finivesta demo website is powered by the following key technologies and libraries:
 

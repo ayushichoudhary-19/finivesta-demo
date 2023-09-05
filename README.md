@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
  # Finance Society IGDTUW - Finivesta (Demo Website)
 <p align="center">
     <img alt="Finivesta Demo Website" src="images/finivesta-homepage.png" />
@@ -22,6 +24,10 @@ Welcome to the Finance Society - Finivesta's demo website repository. This proje
 Explore the live demo of the Finivesta demo website by clicking [here](https://ayushichoudhary-19.github.io/finivesta-demo/).
 
 ## Tech Stack
+<i class="fab fa-html5"></i>
+<i class="fab fa-css3"></i>
+<i class="fab fa-js"></i>
+<i class="fab fa-bootstrap"></i>
 
 The Finivesta demo website is powered by the following key technologies and libraries:
 

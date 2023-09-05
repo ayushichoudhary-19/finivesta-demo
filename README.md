@@ -1,6 +1,6 @@
  # Finance Society IGDTUW - Finivesta (Demo Website)
 <p align="center">
-    <img alt="Finivesta Demo Website" src="![image](images/Screenshot (10).png)" />
+    <img alt="Finivesta Demo Website" src="images/Screenshot (10).png" />
 </p> 
 
 ## Table of Contents

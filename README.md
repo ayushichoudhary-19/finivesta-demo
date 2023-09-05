@@ -1,11 +1,6 @@
  # Finance Society IGDTUW - Finivesta (Demo Website)
 
 
-<p align="center">
-    <img alt="Finivesta Demo Website" src="![image](https://github.com/ayushichoudhary-19/finivesta-demo/assets/73214455/129c9bbe-32c4-4397-b5f6-edb4658b7ee1)
-" />
-</p>
-
 ---
 
 ## Table of Contents
